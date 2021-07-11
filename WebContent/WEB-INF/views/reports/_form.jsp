@@ -21,6 +21,13 @@
 <label for="title">タイトル</label><br />
 <input type="text" name="title" value="${report.title}" />
 <br /><br />
+<label for="time_in">出勤時間</label><br />
+<input type="text" name="time_in" value="${report.time_in}" />
+<br /><br />
+<label for="time_out">退勤時間</label><br />
+<input type="text" name="time_out" value="${report.time_out}" />
+<br /><br />"                           
+                            
 
 <label for="content">内容</label><br />
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>

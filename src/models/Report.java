@@ -59,6 +59,13 @@ public class Report {
 
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
+    @Column(name = "time_in", length = 50)
+    private String time_in;
+
+    @Column(name = "time_out", length = 50)
+    private String time_out;                           
+                            
+    
 
     public Integer getId() {
         return id;
@@ -115,4 +122,21 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+    
+       public String getTime_in() {
+    return time_in;
+}
+
+public void setTime_in(String time_in) {
+    this.time_in = time_in;
+}
+
+public String getTime_out() {
+    return time_out;
+}
+
+public void setTime_out(String time_out) {
+    this.time_out = time_out;
+}                        
+                        
 }
